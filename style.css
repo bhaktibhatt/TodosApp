@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+body{
+    background-color: #FAFAFA;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list-container{
+    width: 600px;
+    height: 500px;
+    background-color: #8299CB;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+}
+.list-container textarea{
+    all:unset;
+    overflow: hidden;
+    padding: 15px;
+    background-color: #FAFAFA;
+    border-radius: 10px;
+
+}
