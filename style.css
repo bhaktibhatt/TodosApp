@@ -1,3 +1,9 @@
+:root{
+    --blue: #8299CB;
+    --purpleDark:#9955AA;
+    --black:#050505;
+    --white:#FAFAFA;
+}
 *{
     padding: 0;
     margin: 0;
@@ -12,15 +18,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .list-container{
     width: 500px;
     height: 400px;
-    background-color: #8299CB;
+    background-color: var(--blue);
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     padding: 70px;
+    color:var(--black);
 }
 
 .task-container{
@@ -41,9 +49,30 @@ body{
 
 }
 .task-container:hover{
-    border-color: #9955AA;
+    border-color: var(--purpleDark);
 }
 .add-task{
     height: 20px;
     width: 30px;
+}
+.btn-container{
+    opacity: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+.cancel{
+    all:unset;
+    color: var(--black);
+}
+.cancel:hover{
+    color: var(--purpleDark);
+}
+.add{
+    all:unset;
+    background-color:var(--white);
+    padding: 9px 30px;
+    border-radius: 20px;
 }
